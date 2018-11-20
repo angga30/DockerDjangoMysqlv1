@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{%load static %}
+{% block bannerstyle %}
+    <link rel="stylesheet" href="{% static "blog/css/blog.css" %}"/>
+{% endblock bannerstyle %}
+
+{% block header %}
+    <h1>{{ heading}}</h1>
+    <p>{{ subheading }}</p>
+{% endblock header %}
+
+{% block content1 %}
+    <h1>content beraeda</h1>
+{% endblock content1 %}
+
+{% block content2 %}
+    <h1>content 2</h1>
+{% endblock content2 %}

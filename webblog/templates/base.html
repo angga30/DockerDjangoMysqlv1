@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    {% include "tempelan/style.html" %}
+    {% block bannerstyle %}
+    <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+{% endblock bannerstyle %}
+
+
+</head>
+<body>
+{% include "tempelan/navbar.html" %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-white">
+        {% block header %}
+
+        {% endblock header %}
+    </div>
+</div>
+<div class="container-fluid>">
+    <div class="container bg-light shadow" style="margin-top:-100px" id="mybod">
+        <div class="row" style="height:400px">
+            {% block content1 %}
+
+            {% endblock content1 %}
+        </div>
+
+    </div>
+    <div class="container bg-dark shadow">
+        <div class="row" style="height:400px">
+            {% block content2 %}
+
+            {% endblock content2 %}
+        </div>
+    </div>
+    {% include "tempelan/script.html" %}
+</body>
+</html>

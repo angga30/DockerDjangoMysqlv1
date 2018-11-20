@@ -1,0 +1,1 @@
+mysql -u root -ptesting -e 'ALTER USER root IDENTIFIED WITH mysql_native_password BY 'testing';'
